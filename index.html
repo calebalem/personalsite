@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Caleb Alem - Software Engineer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+ <script>
+  function sendMail(e){
+    e.preventDefault();
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'caleb@calebalem.com',
+    From : "alemcaleb@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+  }
+ </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
+
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        </li>
+        
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Caleb Alem</h1>
+      <p>I'm <span class="typed" data-typed-items="Frontend Developer, Backend Developer, Freelancer"></span></p>
+      <div class="social-links">
+        <a href="https://t.me/calebalem" target="_blank" class="instagram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://www.upwork.com/freelancers/~01a40b40d5f29bdd59" target="_blank" class="google-plus"><i
+            class="bx bxl-upwork"></i></a>
+        <a href="https://github.com/calebalem" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I'm a software engineer, I do front and backend development in Flutter, JavaScript, Golang and Node.js. I'm
+            adept at contributing to a highly collaborative work environment, finding solutions, and determining
+            customer satisfaction.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/caleb.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Software Engineer.</h3>
+            <p>
+              I've designed and developed interactive web applications across multiple APIs, third-party integrations,
+              and databases. I'm passionate and hardworking with a penchant for developing fault-tolerant,
+              performance-oriented, and scalable software services.
+
+              On every project, my goal is to reach max efficiency, learn from every experience, and use both to improve
+              the product.
+
+            <h3>Accomplishments and education</h3>
+
+            I have a bachelor's degree in software engineering, and before starting freelancing I worked at Ricon
+            Software Systems for four years and worked on a point of sales system, media streaming platform, e-commerce
+            app, and interactive real-time betting platform.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+   
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Go <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Node.js<i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Flutter <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Svelte <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">React <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Postgresql <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Mongo<i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>I'm a Full-stack software developer with over 4 years of experience in
+            Designing engaging, scalable performant and secure Cross-patform
+            applications.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Software Engineering</h4>
+              <h5>Jan 2012 - Jan 2016</h5>
+              <p><em>Addis Ababa Institute of technology, Ethiopia, AA</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Freelance Software Developer</h4>
+              <h5>Nov 2018 - Present</h5>
+              <p><em>Self-employed & Upwork</em></p>
+              <p>At the end of 2021 I decided to leave Ricon and started freelancing
+                fulltime and worked with many clients on various projects.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Fullstack Software Developer</h4>
+              <h5>Mar 2016 - Nov 2021</h5>
+              <p><em>Ricon Software Systems, Ethiopia, AA</em></p>
+              <p>In my first year, I worked as a front-end software developer. I was
+                Working on a school management system I worked mainly on state
+                management using Redux and worked on developing reusable
+                Components using react after that in 2017 I worked on the frontend
+                of a movie streaming platform(Android), and I worked mainly on the
+                video player which was a fork of VLC which we optimized and inte-
+                grated into our app, that was my frontend journey with the company.</p>
+
+              <p>At the beginning of 2018, I got the chance to work on the backend
+                service of a point of sales system 80% of the code base was written
+                in Go and I was in charge of two microservices, one of them was used
+                to generate reports for other microservices and the other was used
+                for user authentication.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Below are some of the projects i've worked on.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/keno_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Remo</h4>
+                <p>Cross-Platfrom App.</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/keno_1.jpg" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Libgen"><i class="bx bx-plus"></i></a>
+                  <a href="https://keno-9a24f.web.app/" target="_blank" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="Link"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/mem.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>My Memory</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/mem.jpg" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Libgen"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/calebalem/memory_project" target="_blank" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Github"><i class="bx bxl-github"></i></a>
+                  <a href="https://memo-1d7a1.web.app/" target="_blank" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="Link"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+
+       
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ketz.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ketzner</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/ketz.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Libgen"><i class="bx bx-plus"></i></a>
+                  <a href="https://ketzner.us" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="Link"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+         
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/lib.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Libgen</h4>
+                <p>Cross-Platfrom App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/lib.jpg" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Libgen"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+   
+
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A2, Addis Ababa, Ethiopia</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>caleb@calebalem.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+251-910-437430</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <div class="text-center"><button type="submit" >Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Caleb Alem</h3>
+      <p>The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela</p>
+      <div class="social-links">
+        <a href="https://t.me/calebalem" target="_blank" class="instagram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://www.upwork.com/freelancers/~01a40b40d5f29bdd59" target="_blank" class="google-plus"><i
+            class="bx bxl-upwork"></i></a>
+        <a href="https://github.com/calebalem" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Caleb Alem</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

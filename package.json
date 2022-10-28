@@ -1,0 +1,14 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this template!",
+  "main": "index.html",
+  "scripts": {
+    "dev": "nodemon index.html"
+  },
+  "author": "caleb alem",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
