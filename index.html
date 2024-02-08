@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8TRLFFZ6N1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TRLFFZ6N1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-8TRLFFZ6N1');
-</script>
+    gtag('config', 'G-8TRLFFZ6N1');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -38,82 +37,84 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
- <script src="https://smtpjs.com/v3/smtp.js"></script>
- 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </head>
 
 <body>
- 
+
 
   <script type="module">
     // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-  import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-  
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDo_5-jjMbfulDzIbdqxkqSW4q2fenkPhQ",
-    authDomain: "personal-site-4ea5e.firebaseapp.com",
-    projectId: "personal-site-4ea5e",
-    storageBucket: "personal-site-4ea5e.appspot.com",
-    messagingSenderId: "842462480340",
-    appId: "1:842462480340:web:553ab8fd020173af753841",
-    measurementId: "G-8TRLFFZ6N1"
-  };
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  
-  
-   function downloadApp(){
-    const storage = getStorage(app);
-    const pathReference = ref(storage, 'Libgen.apk');
-    getDownloadURL(pathReference).then((url)=>{
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "Libgen.apk";
-      link.click()
-    })
-  }
-  
-  function test(){
-    console.log("caleb")
-  }
-  
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+    import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD5n3-AAGS7wjJz5XIRCiIF4UmICPEB3nM",
+      authDomain: "pincoreworld.firebaseapp.com",
+      databaseURL:
+        "https://pincoreworld-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "pincoreworld",
+      storageBucket: "pincoreworld.appspot.com",
+      messagingSenderId: "567808045743",
+      appId: "1:567808045743:web:5560389c0d7085a701da5a",
+      measurementId: "G-VQZ4T0DPNB"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+
+    function downloadApp() {
+      const storage = getStorage(app);
+      const pathReference = ref(storage, 'Libgen.apk');
+      getDownloadURL(pathReference).then((url) => {
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "Libgen.apk";
+        link.click()
+      })
+    }
+
+    function test() {
+      console.log("caleb")
+    }
+
     window.downloadApp = downloadApp
     //downloadApp()
   </script>
 
   <script type="text/javascript">
-   
-    function sendMail(){
+
+    function sendMail() {
       console.log("click")
       email = document.getElementById("email").value
-    message = document.getElementById("message").value
-    subject = document.getElementById("subject").value
-    name = document.getElementById("name").value
-    console.log(`email: ${email}, message: ${message}, subject: ${subject}, name: ${name}`)
+      message = document.getElementById("message").value
+      subject = document.getElementById("subject").value
+      name = document.getElementById("name").value
+      console.log(`email: ${email}, message: ${message}, subject: ${subject}, name: ${name}`)
       Email.send({
-      Host : "smtp.elasticemail.com",
-      Port:2525,
-      Username : "caleb@calebalem.com",
-      Password : "A7136302E94A35CF2529C1CF2C0A237F6184",
-      From:"alemcaleb@gmail.com",
-      To : 'caleb@calebalem.com',
-      Subject : `[${email}]${subject}`,
-      Body : message
-  }).then((val)=>{
-    document.getElementById("email").value = ""
-    document.getElementById("message").value = ""
-    document.getElementById("subject").value = ""
-    document.getElementById("name").value = ""
-    document.getElementById("response").innerText = "Thanks for reaching out, I'll respond asap."
-    setTimeout(()=>{ document.getElementById("response").innerText = ""},5000)
-  }
-  );
+        Host: "smtp.elasticemail.com",
+        Port: 2525,
+        Username: "caleb@calebalem.com",
+        Password: "A7136302E94A35CF2529C1CF2C0A237F6184",
+        From: "alemcaleb@gmail.com",
+        To: 'caleb@calebalem.com',
+        Subject: `[${email}]${subject}`,
+        Body: message
+      }).then((val) => {
+        document.getElementById("email").value = ""
+        document.getElementById("message").value = ""
+        document.getElementById("subject").value = ""
+        document.getElementById("name").value = ""
+        document.getElementById("response").innerText = "Thanks for reaching out, I'll respond asap."
+        setTimeout(() => { document.getElementById("response").innerText = "" }, 5000)
+      }
+      );
     }
   </script>
   <!-- ======= Mobile nav toggle button ======= -->
@@ -131,7 +132,7 @@
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
         </li>
-        
+
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -148,7 +149,8 @@
         <a href="https://www.upwork.com/freelancers/~01a40b40d5f29bdd59" target="_blank" class="google-plus"><i
             class="bx bxl-upwork"></i></a>
         <a href="https://github.com/calebalem" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/calebalem/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/calebalem/" target="_blank" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
 
       </div>
     </div>
@@ -193,7 +195,7 @@
       </div>
     </section><!-- End About Section -->
 
-   
+
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
@@ -374,43 +376,79 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/keno_1.jpg" class="img-fluid" alt="">
+
               <div class="portfolio-info">
                 <h4>Remo</h4>
                 <p>A realtime betting platform for casinos.</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/keno_1.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Maximize View"><i class="bx bx-plus"></i></a>
-                  <a href="https://pincore.net/" target="_blank" data-glightbox="type: external"
-                    title="Link"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/keno_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Maximize View"><i class="bx bx-plus"></i></a>
+                  <a href="https://pincore.net/" target="_blank" data-glightbox="type: external" title="Link"><i
+                      class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          
 
-        
 
-       
+
+
+
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ketz.png" class="img-fluid" alt="">
+           
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                <img src="assets/img/maraki/01.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="assets/img/maraki/02.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="assets/img/maraki/03.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="assets/img/maraki/04.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="assets/img/maraki/05.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="assets/img/maraki/06.jpg" class="img-fluid" alt="">
+              </div>
+            
+            </div>
               <div class="portfolio-info">
-                <h4>Ketzner</h4>
-                <p>A web scraper that scrapes over 10+ betting sites for the best NFL&NBA odds.</p>
+                <h4>Maraki</h4>
+                <p>A dating app like tinder.Frontend built with Flutter, Backend uses Firebase with Nodejs</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/ketz.png" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Maximize View"><i class="bx bx-plus"></i></a>
-                  <a href="https://ketzner.us"  data-glightbox="type: external"
-                    title="Link"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/maraki/01.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Maximize View"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/maraki/02.jpg" data-gallery="portfolioGallery"  class="portfolio-lightbox"
+                    title="Maximize View"></a>
+                    <a href="assets/img/maraki/03.jpg" data-gallery="portfolioGallery"  class="portfolio-lightbox"
+                    title="Maximize View"></a>
+                    <a href="assets/img/maraki/04.jpg" data-gallery="portfolioGallery"  class="portfolio-lightbox"
+                    title="Maximize View"></a>
+                    <a href="assets/img/maraki/05.jpg" data-gallery="portfolioGallery"  class="portfolio-lightbox"
+                    title="Maximize View"></a>
+                    <a href="assets/img/maraki/06.jpg" data-gallery="portfolioGallery"  class="portfolio-lightbox"
+                    title="Maximize View"></a>
+                    <a href="assets/img/maraki/07.jpg" data-gallery="portfolioGallery"  class="portfolio-lightbox"
+                    title="Maximize View"></a>
+                    <a href="assets/img/maraki/08.jpg" data-gallery="portfolioGallery"  class="portfolio-lightbox"
+                    title="Maximize View"></a>
+                  <a href="https://ketzner.us" data-glightbox="type: external" title="Link"><i
+                      class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
 
-         
+
 
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
@@ -420,10 +458,10 @@
                 <h4>Libgen</h4>
                 <p>Download any book fore free!</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/lib.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Maximize View"><i class="bx bx-plus"></i></a>
-                  <button  data-glightbox="type: external"
-                    title="Download APK" onclick="downloadApp()"><i class="bx bx-download"></i></button>
+                  <a href="assets/img/portfolio/lib.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Maximize View"><i class="bx bx-plus"></i></a>
+                  <button data-glightbox="type: external" title="Download APK" onclick="downloadApp()"><i
+                      class="bx bx-download"></i></button>
                 </div>
               </div>
             </div>
@@ -444,7 +482,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/telebirr.jpg" class="img-fluid" alt="">
@@ -452,8 +490,8 @@
                 <h4>Telebirr</h4>
                 <p>Dart library to integrate telebirr payment gateway.</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/telebirr.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Maximize View"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/telebirr.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Maximize View"><i class="bx bx-plus"></i></a>
                   <a href="https://github.com/calebalem/telebirr" target="_blank" data-gallery="portfolioGallery"
                     class="portfolio-lightbox" title="Github"><i class="bx bxl-github"></i></a>
                 </div>
@@ -468,10 +506,11 @@
                 <h4>Flutter plugin</h4>
                 <p>A flutter plugin for creating and managing download tasks.</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/download.png" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Maximize View"><i class="bx bx-plus"></i></a>
-                  <a href="https://github.com/calebalem/flutter_downloader" target="_blank" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Github"><i class="bx bxl-github"></i></a>
+                  <a href="assets/img/portfolio/download.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Maximize View"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/calebalem/flutter_downloader" target="_blank"
+                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="Github"><i
+                      class="bx bxl-github"></i></a>
                 </div>
               </div>
             </div>
@@ -484,8 +523,8 @@
                 <h4>My Memory</h4>
                 <p>A webapp that let's you capture the memories you make.</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/mem.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Maximize View"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/mem.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Maximize View"><i class="bx bx-plus"></i></a>
                   <a href="https://github.com/calebalem/memory_project" target="_blank" data-gallery="portfolioGallery"
                     class="portfolio-lightbox" title="Github"><i class="bx bxl-github"></i></a>
                 </div>
@@ -498,9 +537,9 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-   
 
-    
+
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -532,29 +571,30 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-           
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required id="message"></textarea>
-              </div>
-              <!-- <div class="my-3">
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required
+                id="message"></textarea>
+            </div>
+            <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <p id="response"></p>
-              <div class="text-center"><button class="btn btn-primary" onclick="sendMail()">Send Message</button></div>
-            
+            <p id="response"></p>
+            <div class="text-center"><button class="btn btn-primary" onclick="sendMail()">Send Message</button></div>
+
 
           </div>
 
@@ -575,7 +615,8 @@
         <a href="https://www.upwork.com/freelancers/~01a40b40d5f29bdd59" target="_blank" class="google-plus"><i
             class="bx bxl-upwork"></i></a>
         <a href="https://github.com/calebalem" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/calebalem/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/calebalem/" target="_blank" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy;<strong><span>Caleb Alem</span></strong> 2023. All Rights Reserved.
@@ -600,7 +641,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
 
 </body>
 
